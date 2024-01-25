@@ -112,9 +112,9 @@ This application provides a Movie Management System where users can register, lo
 | Method | Endpoint             | Description              | Authentication Required  |
 | ------ | ---------------------| ------------------------ | ------------------------ |
 | POST   | `/movie/Addmovie`     | Add a new movie          | 	Yes (Admin)             |
-| POST   | `/movie/movies`       | 	Get all movies | No                       |
-| POST   | `/movie/:id`       | Get a specific movie     | No                   |
-| POST   | `/movie/update/:id`     | 	Update a movie         | 	Yes (Admin)             |
-| POST   | `/movie/delete/:id`       | 	Delete a movie | Yes (Admin)                      |
+| GET   | `/movie/movies`       | 	Get all movies | No                       |
+| GET  | `/movie/:id`       | Get a specific movie     | No                   |
+| PUT   | `/movie/update/:id`     | 	Update a movie         | 	Yes (Admin)             |
+| DELETE   | `/movie/delete/:id`       | 	Delete a movie | Yes (Admin)                      |
 
 
