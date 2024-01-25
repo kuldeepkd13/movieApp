@@ -8,7 +8,7 @@ const SignUpPage = () => {
 
   const handleSignUp = async () => {
     try {
-      const response = await fetch('http://localhost:4500/user/register', {
+      const response = await fetch('https://tasty-trunks-bear.cyclic.app/user/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

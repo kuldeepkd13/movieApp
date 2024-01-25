@@ -18,7 +18,7 @@ const MovieDetailPage = ({ userRole }) => {
   useEffect(() => {
     const fetchMovieDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:4500/movie/${movieId}`);
+        const response = await fetch(`https://tasty-trunks-bear.cyclic.app/movie/${movieId}`);
         if (!response.ok) {
           throw new Error('Failed to fetch movie details');
         }
@@ -49,7 +49,7 @@ const MovieDetailPage = ({ userRole }) => {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:4500/movie/update/${movieId}`, {
+      const response = await fetch(`https://tasty-trunks-bear.cyclic.app/movie/update/${movieId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -79,7 +79,7 @@ const MovieDetailPage = ({ userRole }) => {
   const handleDelete = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:4500/movie/delete/${movieId}`, {
+      const response = await fetch(`https://tasty-trunks-bear.cyclic.app/movie/delete/${movieId}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
@@ -102,7 +102,7 @@ const MovieDetailPage = ({ userRole }) => {
   const handleAddToWishlist = async() => {
     try {
         const token = localStorage.getItem('token');
-        const response = await fetch(`http://localhost:4500/user/addtowishlist/${movieId}`, {
+        const response = await fetch(`https://tasty-trunks-bear.cyclic.app/user/addtowishlist/${movieId}`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

@@ -14,7 +14,7 @@ function App() {
   const handleLogout = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:4500/user/logout', {
+      const response = await fetch('https://tasty-trunks-bear.cyclic.app/user/logout', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

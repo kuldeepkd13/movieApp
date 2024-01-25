@@ -8,7 +8,7 @@ const SignInPage = () => {
 
   const handleSignIn = async () => {
     try {
-      const response = await fetch('http://localhost:4500/user/login', {
+      const response = await fetch('https://tasty-trunks-bear.cyclic.app/user/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

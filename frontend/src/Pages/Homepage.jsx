@@ -9,7 +9,7 @@ const Homepage = () => {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const response = await fetch('http://localhost:4500/movie/movies');
+        const response = await fetch('https://tasty-trunks-bear.cyclic.app/movie/movies');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }

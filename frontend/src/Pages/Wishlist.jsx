@@ -8,7 +8,7 @@ const WishlistPage = () => {
     const fetchWishlistMovies = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch('http://localhost:4500/user/wishlist',{
+        const response = await fetch('https://tasty-trunks-bear.cyclic.app/user/wishlist',{
             method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -31,7 +31,7 @@ const WishlistPage = () => {
   const handleRemoveFromWishlist = async (movieId) => {
     try {
     const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:4500/user/removeFromWishlist/${movieId}`, {
+      const response = await fetch(`https://tasty-trunks-bear.cyclic.app/user/removeFromWishlist/${movieId}`, {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json',
